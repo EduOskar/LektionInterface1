@@ -8,7 +8,7 @@ namespace LektionInterface1
         //Column of Class variables
         private double Radius; 
         private double Height;
-        private bool b; //bool for Set for Radius
+        private bool b; //Bool for Set for Radius
         private bool a; //Bool for Set for Height 
         public Rektangel(double Radius = 4, double Height = 10) //Default values for Area in here
         {
@@ -22,7 +22,7 @@ namespace LektionInterface1
             get { return Radius; }
             set
             {
-                b = false;
+                b = false; //Sets the method to false so we can re-use the code if we wanna add new numbers later.
                 while (b == false) //Added a condition to Set, mostly to play with the code, but also so the user dosent add a value lower than 1 incase of error
                 {
                     if (value > 1)
@@ -82,5 +82,4 @@ namespace LektionInterface1
         }
 
     }
-
 }
