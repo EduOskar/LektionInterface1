@@ -33,7 +33,7 @@ namespace LektionInterface1
                     {
                         try
                         {
-                            Console.WriteLine("Skriv 1 eller högre");
+                            Console.WriteLine("Skriv 2 eller högre");
                             value = double.Parse(Console.ReadLine());
                         }
                         catch (Exception)

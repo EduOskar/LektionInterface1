@@ -2,13 +2,13 @@
 {
     public class Teckning : IArea
     {
-        double Radius { get; set; }
-        public Teckning()
+        private double Radius { get; set; } //Parent-class that child-classes inherit from
+        public Teckning() //construct containing 0 value since the value here dosent matter
         {
-            this.Radius = 4;
+            this.Radius = 0;
         }
 
-        public virtual double Area() 
+        public virtual double Area() //Method that exists for other methods to override
         {
             return 0;
         }
